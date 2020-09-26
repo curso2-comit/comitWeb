@@ -1,37 +1,75 @@
+<!doctype html>
 <html>
     <head>
         <title>ComIT</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/principal.css">        
-        <style>
-
-        </style>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="css/principal.css">                
+        
     </head>
     <body>
         <h1>Bienvenidos a ComIT</h1>
-        <div id="menu" class="top">            
-            <ul>
-                <li class="opcionMenu"><a href="paginas/alumnos.html" target="_blank">Alumnos</a></li>
-                <li class="opcionMenu"><a href="paginas/about.html" target="_blank">Acerca de</a></li> 
-                <li class="opcionMenu"><a href="paginas/contact.html" target="_blank">Contacto</a></li> 
-            </ul>
+
+        <!--<div class="alert alert-primary" role="alert">
+            Bienvenido a la página de comit!
+        </div>-->
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            Bienvenido a la página de <strong>comit!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
         </div>
 
-        <h2 id="principal">Título</h2>
-        <p>Hola, estoy es un texto.</p>
-        <!-- Esto es un comentario -->
-        <!-- Esto es una ruta absoluta -->
-        <a href="http://www.google.com">Ir a google</a> <br/>
-        <!-- Esto es una ruta absoluta local -->
-        <!--<a href="file:///C:/Users/juanl/Desktop/Curso%20ComIT/Clase1/about.html">Acerca de</a>-->
+        <div class="container-fluid">
+            <div class="row">
+                <div id="menu" class="col-sm-6 col-md-4">
+
+                    <div class="top">            
+                        <ul>
+                            <li class="opcionMenu"><a href="paginas/alumnos.html" target="_blank">Alumnos</a></li>
+                            <li class="opcionMenu"><a href="paginas/about.html" target="_blank">Acerca de</a></li> 
+                            <li class="opcionMenu"><a href="paginas/contact.html" target="_blank">Contacto</a></li> 
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col">                                    
+
+                    <h2 id="principal">Título</h2>
+                    <p>Hola, estoy es un texto.</p>
+                    <div class="cuadrado">
+                        <p>UN CUADRADO</p>
+                    </div>
+                    <!-- Esto es un comentario -->
+                    <!-- Esto es una ruta absoluta -->
+                    <a href="http://www.google.com">Ir a google</a> <br/>
+                    <!-- Esto es una ruta absoluta local -->
+                    <!--<a href="file:///C:/Users/juanl/Desktop/Curso%20ComIT/Clase1/about.html">Acerca de</a>-->
+                    
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="footer offset-sm-2 col-sm-8 offset-md-4 col-md-4">
+                    <p style="color:saddlebrown">Footer</p>
+                    <ul>
+                        <li>contacto@comunidadit.org.ar</li>            
+                    </ul>               
+                </div>     
+            </div>
+
+        </div>
         
-        
-        
-        <p style="color:saddlebrown">Footer</p>
-        <ul>
-            <li>contacto@comunidadit.org.ar</li>            
-        </ul>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

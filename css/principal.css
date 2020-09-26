@@ -1,36 +1,76 @@
 body {
  background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg');    
  background-size: cover;
- font-size: 14px; 
+ /*font-size: 14px; */
  font-family: 'Open Sans', sans-serif;
 }
 
 h1,h2 {
     text-align: center;
-    color:green;
+    /*color:green;*/
 }      
 #menu {
     background-color: rgba(3, 3, 3, 0.3);    
     text-align: center;                                     
 }
 li.opcionMenu{
-    display: inline-block;
+    /*display: inline-block;*/
+    list-style: none;
     padding: 10px 20px;
     /*margin: 10px;*/
     border: solid 6px darkblue;
     border-bottom-style: unset;
-    height: 20px;
+    border-radius: 20%;    
+    /*transform: rotate(90deg);*/
+}
+
+li.opcionMenu:hover{
+    box-shadow: 5px 5px 10px #333;
+    cursor: pointer;
 }
 
 li a{
     text-decoration: none;
 }
 
+/*
 li a:hover{
     background-color: lightgray;
-}
+}*/
 
 #principal{
     color: #333;  
     text-align: left;
 }
+
+.cuadrado{
+    height: 300px;
+    width: 300px;
+    background-color: rebeccapurple;
+}
+.cuadrado p{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: rgba(3, 3, 3, 0.8);
+}
+
+/*
+@media (max-width: 600px) and (orientation: landscape) {
+    h1{ color: red; }
+    .cuadrado{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1480px){
+    h1{ margin: 10%; }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+    h1{ color: green; }    
+}
+*/
