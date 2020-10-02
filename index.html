@@ -1,75 +1,129 @@
-<!doctype html>
-<html>
-    <head>
-        <title>ComIT</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="css/principal.css">                
-        
-    </head>
-    <body>
-        <h1>Bienvenidos a ComIT</h1>
-
-        <!--<div class="alert alert-primary" role="alert">
-            Bienvenido a la página de comit!
-        </div>-->
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-            Bienvenido a la página de <strong>comit!</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ComIT</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ComIT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opcionesQueSeColapsan" aria-controls="opcionesQueSeColapsan" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opcionesQueSeColapsan">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#numeros">Indicadores</span></a>            
+            <a class="nav-link" href="contact.html">Contacto</a>            
+          </div>
         </div>
+    </nav>    
 
-        <div class="container-fluid">
-            <div class="row">
-                <div id="menu" class="col-sm-6 col-md-4">
-
-                    <div class="top">            
-                        <ul>
-                            <li class="opcionMenu"><a href="paginas/alumnos.html" target="_blank">Alumnos</a></li>
-                            <li class="opcionMenu"><a href="paginas/about.html" target="_blank">Acerca de</a></li> 
-                            <li class="opcionMenu"><a href="paginas/contact.html" target="_blank">Contacto</a></li> 
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col">                                    
-
-                    <h2 id="principal">Título</h2>
-                    <p>Hola, estoy es un texto.</p>
-                    <div class="cuadrado">
-                        <p>UN CUADRADO</p>
-                    </div>
-                    <!-- Esto es un comentario -->
-                    <!-- Esto es una ruta absoluta -->
-                    <a href="http://www.google.com">Ir a google</a> <br/>
-                    <!-- Esto es una ruta absoluta local -->
-                    <!--<a href="file:///C:/Users/juanl/Desktop/Curso%20ComIT/Clase1/about.html">Acerca de</a>-->
-                    
+    <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselPrincipal" data-slide-to="1"></li>              
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/home.jpg" class="mx-auto w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>ComIT</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="img/home2.jpg" class="mx-auto  w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>ComIT</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            </div>              
+        </div>
+        <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Atrás</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Adelante</span>
+        </a>
+    </div>
+    
+    <div id="acercaDe">
+        <p>TWO YEARS OF BUILDING BRIDGES BETWEEN THOSE IN NEED TO OVERCOME EMPLOYMENT BARRIERS AND COMPANIES SEEKING TALENTED IT PROFESSIONALS</p>
+    </div>
+    <div class="container-fluid" id="numeros">
+        <div class="row">
+            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
+                <img src="img/comit.png" class="card-img-top" alt="Ciudades donde está ComIT">
+                <div class="card-body">
+                    <h5 class="card-title">Ciudades</h5>
+                    <p class="card-text">Buenos Aires, Córdoba, Toronto, Vancouver, Calgary, Saskatoon and Winnipeg among them.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventanaConfirmacion">
+                        Ir a ComIT  
+                        <i class="fas fa-check-circle"></i>                      
+                    </button>
                 </div>
             </div>
-
-
-            <div class="row">
-                <div class="footer offset-sm-2 col-sm-8 offset-md-4 col-md-4">
-                    <p style="color:saddlebrown">Footer</p>
-                    <ul>
-                        <li>contacto@comunidadit.org.ar</li>            
-                    </ul>               
-                </div>     
+            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
+                <img src="img/comit.png" class="card-img-top" alt="Ciudades donde está ComIT">
+                <div class="card-body">
+                  <h5 class="card-title">Empresas</h5>
+                  <p class="card-text">Buenos Aires, Córdoba, Toronto, Vancouver, Calgary, Saskatoon and Winnipeg among them.</p>
+                </div>
             </div>
-
+            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
+                <img src="img/comit.png" class="card-img-top" alt="Ciudades donde está ComIT">
+                <div class="card-body">
+                  <h5 class="card-title">Egresados</h5>
+                  <p class="card-text">Buenos Aires, Córdoba, Toronto, Vancouver, Calgary, Saskatoon and Winnipeg among them.</p>
+                </div>
+            </div>
+            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
+                <img src="img/comit.png" class="card-img-top" alt="Ciudades donde está ComIT">
+                <div class="card-body">
+                  <h5 class="card-title">Egresados con trabajo</h5>
+                  <p class="card-text">Buenos Aires, Córdoba, Toronto, Vancouver, Calgary, Saskatoon and Winnipeg among them.</p>
+                </div>
+            </div>
         </div>
-        
-        <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+    </div>
+
+
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="ventanaConfirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Estás seguro que querés ir a la página de ComIT?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <a href="https://www.comit.org" target="_blank" type="button" class="btn btn-primary">Sí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
