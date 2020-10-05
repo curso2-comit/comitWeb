@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
-    <title>ComIT</title>
+    <title>ComIT</title>    
 </head>
 <body>
     
@@ -20,9 +20,12 @@
             <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="#numeros">Indicadores</span></a>            
             <a class="nav-link" href="contact.html">Contacto</a>            
+            <a class="usuario nav-link" ></a>
           </div>
         </div>
     </nav>    
+
+    <div class="usuario"></div>
 
     <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -94,7 +97,13 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <button id="comentar" type="button" class="btn btn-primary">
+                Comentar! <i class="fas fa-check-circle"></i>                      
+            </button>
+        </div>
     </div>
+
 
 
     
@@ -121,9 +130,17 @@
     </div>
 
 
+    <div id="seccionContacto" style="display: none;">
+        <p>Hola! Dejanos tus comentarios acá:</p>
+        <input type="text" placeholder="Tu Nombre">
+        <input type="email" placeholder="Tu Email">
+        <textarea placeholder="Tu mensaje"></textarea>
+        <input type="submit" />
+    </div>
 
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
